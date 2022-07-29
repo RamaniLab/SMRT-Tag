@@ -51,4 +51,13 @@ for VCF in ${TOPDIR}/unique/*.vcf.gz; do
     bcftools index -t ${VCF}
 done
 
+
+# cat HG002_GRCh37_1_22_v4.2.1_benchmark_noinconsistent.bed \
+# HG003_GRCh37_1_22_v4.2.1_benchmark_noinconsistent.bed \
+# HG004_GRCh37_1_22_v4.2.1_benchmark_noinconsistent.bed | \
+# sort -k1,1 -k2,2n -k3,3n | \
+# bedtools merge | \
+# bgzip | \
+# > HG002-4.calling_regions.bed.gz
+
 echo "JOB DONE."

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Downsample a BAM file by selecting a fraction of reads
 

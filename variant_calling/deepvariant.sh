@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Call variants from PacBio HiFi reads using deepvariant
 
