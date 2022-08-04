@@ -1,4 +1,4 @@
-## IGV Distribution
+# IGV Distribution
 
 ## Summary
 Modified version of IGV for visualzing m6dA footprints on single molecules / single reads. m6dA footprints must be encoded in ML and MM BAM tags using the specification "N+a", and can be visualized by right-clicking on an alignment track and selecting the option "Color by" --> "Base Modification"
@@ -37,7 +37,7 @@ To launch IGV, source or run the script appropriate for your operating system:
 
 
 ## Example Visualizations
-A visualization of m6dA footprints on SMRT-Tag reads derived from the MYC-amplified osteosarcoma cell line [OS152](https://doi.org/10.1158/2159-8290.CD-17-1152) is provided in the folder [reasd](./reads/).
+A visualization of m6dA footprints on SMRT-Tag reads derived from the MYC-amplified osteosarcoma cell line [OS152](https://doi.org/10.1158/2159-8290.CD-17-1152) is provided in the folder [reads](./reads/).
 
 To load the visualization, open the session file [OS152_MYC.xml](./OS152_MYC.xml) with the modified IGV.
 

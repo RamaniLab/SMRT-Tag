@@ -1,0 +1,30 @@
+name: SMRT-Tag
+channels:
+  - conda-forge
+  - bioconda
+  - anaconda
+  - defaults
+dependencies:
+  - python==3.8.8
+  - samtools>=1.13.0
+  - bcftools>=1.13.0
+  - bedtools=2.30.0
+  - mosdepth=0.3.3
+  - pbccs=6.4.0
+  - pbmm2=1.9.0
+  - lima=2.6.0
+  - primrose=1.3.0
+  - pbtk=1.0.0
+  - pip
+  - pip:
+    - jupyter
+    - edlib
+    - pandas==1.2.4
+    - numpy==1.19.0
+    - numba==0.55.1
+    - tensorflow==2.4.1
+    - pysam==0.19.1
+    - scanpy==1.8.1
+    - scipy==1.9.0
+    - tqdm
+

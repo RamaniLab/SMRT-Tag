@@ -1,10 +1,25 @@
 #!/usr/bin/env bash
+## Siva Kasinathan
+# downsample_bam.sh: Downsample aligned BAM files produced by pbmm2_align.sh
+# Usage: ./downsample_bam.sh 
+#
+## Inputs:
+#     TOPDIR: $TOP_DIR
+#     BAM: PacBio BAM file to be aligned
+#     DEPTH: Depth of downsampling
+#     FRAC: Fraction provided to samtools for downsampling
+#     REGIONS: Region file for depth calculations - GRCh37_notinalllowmapandsegdupregions.bed.gz
+#
+## Outputs:
+#     Outputs are written to ${TOPDIR}/analyses/HG/variant_calling/downsample/${PREFIX}/${DEPTH}X/seed${SEED}
+#         $OUTDIR/${PREFIX}.${DEPTH}X.seed${SEED}.bam: Downsampled aligned BAM file
+#         $OUTDIR/mosdepth/$OUTPREFIX.mosdepth* : mosdepth files including (per-base, regions, thresholds.bed etc.)
 
-# Downsample a BAM file by selecting a fraction of reads
-
-BAM=$1
-DEPTH=$2
-FRAC=$3
+TOPDIR=$1
+BAM=$2
+DEPTH=$3
+FRAC=$4
+REGIONS=$5
 DTYPE=smrt_tag
 
 set -eu
@@ -13,10 +28,8 @@ SEED=0
 PREFIX=`basename ${BAM%%.*}`
 EXTRA_THREADS=7
 
-TOPDIR=${HOME}/smrt_tag/analyses/${DTYPE}
-OUTDIR=${TOPDIR}/${PREFIX}/${DEPTH}X/seed${SEED}
+OUTDIR=${TOPDIR}/analyses/HG/variant_calling/downsample/${PREFIX}/${DEPTH}X/seed${SEED}
 OUTPREFIX=${PREFIX}.${DEPTH}X.seed${SEED}
-REGIONS=${HOME}/smrt_tag/reference/GRCh37/stratification/GRCh37_notinalllowmapandsegdupregions.bed.gz
 
 mkdir -p ${OUTDIR}
 

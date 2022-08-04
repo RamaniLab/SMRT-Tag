@@ -4,8 +4,7 @@
         <Resource path="reads/Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" type="bam"/>
     </Resources>
     <Panel height="502" name="Panel1658806306692" width="1313">
-        <Track attributeKey="SAMOSA-Tag.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="/Users/snanda/Library/CloudStorage/Box-Box/lab/projects/pacbio/igv/Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam_junctions" name="Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam Junctions" visible="false"/>
-        <Track attributeKey="example/SAMOSA-Tag.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" experimentType="OTHER" fontSize="10" id="/Users/snanda/Library/CloudStorage/Box-Box/lab/projects/pacbio/igv/Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" name="Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" visible="true">
+        <Track attributeKey="example/SAMOSA-Tag.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" experimentType="OTHER" fontSize="10" id="Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" name="Tn5.A13.subread.ccs.OS152_plusM.samosa.align.sorted.MYC.bam" visible="true">
             <RenderOptions colorOption="BASE_MODIFICATION"/>
         </Track>
     </Panel>

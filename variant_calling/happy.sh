@@ -1,18 +1,32 @@
 #!/usr/bin/env bash
+## Siva Kasinathan
+# happy.sh: Benchmark vcf against truth set using hap.py
+# Usage: ./happy.sh 
+#
+## Inputs:
+#     TOPDIR: $TOP_DIR
+#     VCF: Deepvariant VCF file
+#     TRUTH_VCF: Truth VCF file from GIAB
+#     TRUTH_BED: Truth BED file from GIAB
+#     FASTA: Genome FASTA file used for alignment
+#     STRAT: Genome stratifications for GRCh37 from GIAB - v3.0-GRCh37-v4.2.1-stratifications.tsv
+#
+## Outputs:
+#     Outputs are written to ${TOPDIR}/analyses/HG/variant_calling/deepvariant/$OUTPREFIX:
+#         $OUTDIR/$OUTPREFIX.deepvariant.happy: hap.py output file benchmarking variant calling
 
-# Benchmark vcf against truth set using hap.py
-
-VCF=$1
-TRUTH_VCF=$2
-TRUTH_BED=$3
+TOPDIR=$1
+VCF=$2
+TRUTH_VCF=$3
+TRUTH_BED=$4
+FASTA=$5
+STRAT=$6
 
 set -eu
 
 THREADS=12
 OUTDIR=`dirname $VCF`
 OUTPREFIX=`basename ${VCF%.vcf.gz}`.happy
-FASTA=${HOME}/smrt_tag/reference/GRCh37/hs37d5.fa
-STRAT=${HOME}/smrt_tag/reference/GRCh37/stratification/v3.0-GRCh37-v4.2.1-stratifications.tsv
 
 export HGREF=${FASTA}
 

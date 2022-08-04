@@ -1,19 +1,32 @@
-#!/bin/bash
+#!/usr/bin/env bash
+## Siva Kasinathan
+# pbmm2_align.sh: Align PacBio unaligned BAM files to a reference genome and run mosdepth to calculate depth stats.
+# Usage: ./pbmm2_align.sh 
+#
+## Inputs:
+#     TOPDIR: $TOP_DIR
+#     BAM: PacBio BAM file to be aligned
+#     OUTPREFIX: Prefix to append to output files
+#     OUTDIR: Directory to write output
+#     FASTA: Reference genome FASTA file
+#     REGIONS: Region file for depth calculations - GRCh37_notinalllowmapandsegdupregions.bed.gz
+#
+## Outputs:
+#     Outputs are written to $OUTDIR
+#         $OUTDIR/$OUTPREFIX.aligned.bam: Aligned BAM file
+#         $OUTDIR/mosdepth/$OUTPREFIX.mosdepth* : mosdepth files including (per-base, regions, thresholds.bed etc.)
 
-# Align reads using pbmm2 and compute per-base depth
-# Input is pacbio BAM file with unaligned reads
-
-BAM=$1
-OUTPREFIX=$2
+TOPDIR=$1
+BAM=$2
+OUTPREFIX=$3
+OUTDIR=$4
+FASTA=$5
+REGIONS=$6
 
 set -eu
 
 DTYPE=smrt_tag
 THREADS=32
-TOPDIR=${HOME}/smrt_tag/analyses/${DTYPE}
-OUTDIR=${TOPDIR}/${OUTPREFIX}
-FASTA=${HOME}/smrt_tag/reference/GRCh37/hs37d5.fa
-REGIONS=${HOME}/smrt_tag/reference/GRCh37/stratification/GRCh37_notinalllowmapandsegdupregions.bed.gz
 
 mkdir -p ${OUTDIR}
 
@@ -26,11 +39,11 @@ pbmm2 align \
     --sample ${OUTPREFIX} \
     ${FASTA} \
     ${BAM} \
-    ${OUTDIR}/${OUTPREFIX}.aligned.bam
+    ${OUTDIR}/${OUTPREFIX}.align.sorted.bam
 
 mosdepth \
     --threads ${THREADS} \
     --use-median \
     --by ${REGIONS} \
     ${OUTDIR}/mosdepth/${OUTPREFIX} \
-    ${OUTDIR}/${OUTPREFIX}.aligned.bam
+    ${OUTDIR}/${OUTPREFIX}.align.sorted.bam
