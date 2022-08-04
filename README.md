@@ -1,14 +1,17 @@
 # SMRT-Tag: Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing
+<br>
 <p align="center">
-<img src="img/logo.png" alt="SMRT-Tag workflow" width=250/>
+<img src="img/logo_parallel.png" alt="SMRT-Tag workflow" width=1000/>
 </p>
+
+<br>
 
 SMRT-Tag (**S**ingle **M**olecule **R**eal **T**ime sequencing by **T**ransposition) is a multiplexable, PCR-free approach for constructing low-input, single-molecule Pacific Biosciences sequencing libraries through Tn5 transposition.
 
  SMRT-Tag:
- * Requires **1-5% as much input material** as existing protocols 
- * Enables highly-sensitive detection of variation and CpG methylation
- * Can be combined with _in_ _situ_ adenine methyltransferase footprinting of nuclei (SAMOSA-Tag) to resolve chromatin fibers in low-input settings.
+ * 📈 Requires **1-5% as much input material** as existing protocols 
+ * 🔎 Enables highly-sensitive detection of variation and CpG methylation
+ * 🧪 Can be combined with _in_ _situ_ adenine methyltransferase footprinting of nuclei (SAMOSA-Tag) to resolve chromatin fibers in low-input settings.
 
 For more info, check out our manuscript:
 
@@ -20,9 +23,11 @@ Interested in **trying out SMRT-Tag?** Check out our experimental protocols on *
 
 * 🧫 📕 [SAMOSA-Tag on Protocols.io](link)
 
+<br>
+
+---
 
 # Analyses
----
 This repo contains code for analyzing SMRT-Tag and SAMOSA-Tag data described in our manuscript. The processing workflow for data produced in this study is described in the two [associated jupyter notebooks](./notebooks/), [SMRT-Tag processing](./notebooks/SMRT-Tag_processing.ipynb) and [SAMOSA-Tag processing](./notebooks/SAMOSA-Tag_processing.ipynb).
 
 Additionally, code for specific analyses can be found in the respective directory:
@@ -55,7 +60,6 @@ Additionally, to visualize single-molecule accessibiltly footprints in SAMOSA-Ta
 
 
 # Data Availibility
----
 All data produced in this study has been deposited on the NCBI SRA and GEO for ease of access.
 
 HG002, HG003, HG004 SMRT-Tag Datasets:
@@ -69,6 +73,5 @@ OS152 SAMOSA-Tag Datasets:
 
 
 # Disclaimer
----
 All code is provided **as is**, with no guarantees. 
 
