@@ -1,4 +1,5 @@
 # SMRT-Tag: Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing
+
 <br>
 <p align="center">
 <img src="img/logo_parallel.png" alt="SMRT-Tag workflow" width=1000/>
@@ -6,7 +7,10 @@
 
 <br>
 
-SMRT-Tag (**S**ingle **M**olecule **R**eal **T**ime sequencing by **T**ransposition) is a multiplexable, PCR-free approach for constructing low-input, single-molecule Pacific Biosciences sequencing libraries through Tn5 transposition.
+
+
+
+**SMRT-Tag** (**S**ingle **M**olecule **R**eal **T**ime sequencing by **T**ransposition) is a multiplexable, PCR-free approach for constructing low-input, single-molecule Pacific Biosciences sequencing libraries through Tn5 transposition.
 
  SMRT-Tag:
  * 📈 Requires **1-5% as much input material** as existing protocols 
@@ -15,17 +19,17 @@ SMRT-Tag (**S**ingle **M**olecule **R**eal **T**ime sequencing by **T**ransposit
 
 For more info, check out our manuscript:
 
-* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A.S, Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.](link)
+* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A. S., Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.](link)
 
-Interested in **trying out SMRT-Tag?** Check out our experimental protocols on **Protocols.IO**:
+Interested in **trying out SMRT-Tag?** Check out our experimental protocols on **Protocols.io**:
 
 * 🧬 📕 [SMRT-Tag on Protocols.io](link)
 
 * 🧫 📕 [SAMOSA-Tag on Protocols.io](link)
 
-<br>
 
 ---
+<br>
 
 # Analyses
 This repo contains code for analyzing SMRT-Tag and SAMOSA-Tag data described in our manuscript. The processing workflow for data produced in this study is described in the two [associated jupyter notebooks](./notebooks/), [SMRT-Tag processing](./notebooks/SMRT-Tag_processing.ipynb) and [SAMOSA-Tag processing](./notebooks/SAMOSA-Tag_processing.ipynb).
