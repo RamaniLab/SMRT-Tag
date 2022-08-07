@@ -1,17 +1,29 @@
-#!/bin/bash
+#!/usr/bin/env bash
+## Siva Kasinathan
+# deepvariant.sh: Call variants from PacBio HiFi reads using deepvariant
+# Usage: ./deepvariant.sh 
+#
+## Inputs:
+#     TOPDIR: $TOP_DIR
+#     BAM: PacBio BAM file to be 
+#     OUTPREFIX: Prefix to append to output files
+#     FASTA: Genome FASTA file used for alignment
+#
+## Outputs:
+#     Outputs are written to ${TOPDIR}/analyses/HG/variant_calling/deepvariant/$OUTPREFIX
+#          $OUTDIR/$OUTPREFIX.deepvariant.vcf.gz: Deepvariant VCF
 
-# Call variants from PacBio HiFi reads using deepvariant
+TOPDIR=$1
+BAM=$2
+OUTPREFIX=$3
+FASTA=$4
 
-BAM=$1
-OUTPREFIX=$2
 
 set -eu
 
 THREADS=32
-TOPDIR=${HOME}/smrt_tag/analyses/smrt_tag
-FASTA=${HOME}/smrt_tag/reference/GRCh37/hs37d5.fa
 
-OUTDIR=${TOPDIR}/${OUTPREFIX}
+OUTDIR=${TOPDIR}/analyses/HG/variant_calling/deepvariant/${OUTPREFIX}
 mkdir -p ${OUTDIR} ${OUTDIR}/log
 
 run_deepvariant \
