@@ -66,7 +66,7 @@ All data produced in this study has been deposited on the NCBI SRA and GEO for e
 
 HG002, HG003, HG004 SMRT-Tag Datasets:
 
-* BioProject: [PRJNA863422](https://dataview.ncbi.nlm.nih.gov/object/PRJNA863422?reviewer=r09bii7m1mrad4ge0fjihq2n7g)
+* BioProject: [PRJNA863422](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA863422)
 
 
 OS152 SAMOSA-Tag Datasets:
