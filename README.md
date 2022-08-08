@@ -17,7 +17,7 @@
 
 For more info, check out our manuscript:
 
-* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A. S., Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.](https://doi.org/10.1101/2022.08.07.502893)
+* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A. S., Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.](https://www.biorxiv.org/content/10.1101/2022.08.07.502893v2)
 
 Interested in **trying out SMRT-Tag?** Check out our experimental protocols on **Protocols.io**:
 
