@@ -8,8 +8,6 @@
 <br>
 
 
-
-
 **SMRT-Tag** (**S**ingle **M**olecule **R**eal **T**ime sequencing by **T**ransposition) is a multiplexable, PCR-free approach for constructing low-input, single-molecule Pacific Biosciences sequencing libraries through Tn5 transposition.
 
  SMRT-Tag:
@@ -19,13 +17,13 @@
 
 For more info, check out our manuscript:
 
-* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A. S., Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.](link)
+* [Sensitive multimodal profiling of native DNA by transposase-mediated single-molecule sequencing.  Nanda A. S., Wu K., Kasinathan S., Ostrowski M. S., Clugston A. S., Satpathy A. T., Sweet-Cordero E. A., Goodarzi H., Ramani V.]()
 
 Interested in **trying out SMRT-Tag?** Check out our experimental protocols on **Protocols.io**:
 
-* 🧬 📕 [SMRT-Tag on Protocols.io](link)
+* 🧬 📕 [SMRT-Tag on Protocols.io](http://dx.doi.org/10.17504/protocols.io.e6nvwk3b9vmk/v1)
 
-* 🧫 📕 [SAMOSA-Tag on Protocols.io](link)
+* 🧫 📕 [SAMOSA-Tag on Protocols.io](http://dx.doi.org/10.17504/protocols.io.3byl4bob2vo5/v1)
 
 
 ---
